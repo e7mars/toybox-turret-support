@@ -3,46 +3,153 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="theme-color" content="#FAF7F2">
-  <meta name="description" content="Support for Toybox Turret, a single-player toybox survival game by Oytun Yegin.">
-  <title>Toybox Turret — Support</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="theme-color" content="#F8EAD1">
+  <meta name="description" content="Toybox Turret is a single-player toybox survival game: move, dodge, build your weapons, and learn four worlds of bosses.">
+  <meta property="og:title" content="Toybox Turret — Tiny buddy. Big boss battles.">
+  <meta property="og:description" content="Move, dodge, build a toy turret, and take on readable bosses in four colorful worlds.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://e7mars.github.io/toybox-turret-support/">
+  <link rel="canonical" href="https://e7mars.github.io/toybox-turret-support/">
+  <link rel="icon" href="robot-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="landing.css">
+  <script defer src="landing.js"></script>
+  <title>Toybox Turret — Tiny buddy. Big boss battles.</title>
 </head>
 <body>
-  <div class="page">
-    <header>
-      <span class="brand">Toybox Turret</span>
-      <nav aria-label="Support pages">
-        <a href="index.html" aria-current="page">Support</a>
+  <a class="skip-link" href="#main">Skip to the game</a>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="Toybox Turret home">
+        <img src="robot-icon.svg" width="44" height="44" alt="">
+        <span>Toybox<br><b>Turret</b></span>
+      </a>
+      <nav aria-label="Page navigation">
+        <a href="#play">Play</a>
+        <a href="#daily">Daily</a>
+        <a href="#support">Support</a>
         <a href="privacy.html">Privacy</a>
       </nav>
     </header>
-    <main>
-      <p class="eyebrow">A little help</p>
-      <h1>Back to the toybox.</h1>
-      <p>Toybox Turret is a single-player game by Oytun Yegin. Dodge crowds, beat bosses, and dress up your buddy.</p>
-      <section class="contact" aria-labelledby="contact-title">
-        <h2 id="contact-title">Contact support</h2>
-        <p>Report a problem or ask a question through the game's GitHub support page.</p>
-        <p><a class="contact-link" href="https://github.com/e7mars/toybox-turret-support/issues/new">Open a support issue</a></p>
-        <p>Issues are public. Include only details you want to share.</p>
+
+    <main id="main">
+      <section class="hero" id="play" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> A single-player toybox survival game</p>
+          <h1 id="hero-title">Tiny buddy.<br><em>Big</em> boss battles.</h1>
+          <p class="lede">Move, dodge pink warnings, and let Popper do the shooting. Each run is a chance to build a new little weapon combo and learn one more boss tell.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" id="open-game" data-explicit-launch href="toybox-turret://">
+              Open Toybox Turret <span aria-hidden="true">↗</span>
+            </a>
+            <a class="text-action" href="#how-it-works">See how it plays <span aria-hidden="true">↓</span></a>
+          </div>
+          <p class="tap-note">This opens the installed app only after you tap it. If nothing opens, the game is not installed on this device yet.</p>
+        </div>
+
+        <div class="toy-scene" role="img" aria-label="Toybox Turret's mint robot is ready to dodge a pink warning circle and a group of colorful toy enemies.">
+          <div class="scene-grid" aria-hidden="true"></div>
+          <span class="scene-spark spark-one" aria-hidden="true">✦</span>
+          <span class="scene-spark spark-two" aria-hidden="true">✦</span>
+          <span class="scene-spark spark-three" aria-hidden="true">✦</span>
+          <span class="toy toy-coral" aria-hidden="true"></span>
+          <span class="toy toy-lavender" aria-hidden="true"></span>
+          <span class="toy toy-yellow" aria-hidden="true"></span>
+          <span class="projectile" aria-hidden="true"></span>
+          <span class="warning-ring" aria-hidden="true"></span>
+          <img class="hero-robot" src="robot-icon.svg" width="240" height="240" alt="">
+          <p class="scene-label"><span aria-hidden="true">✦</span> Dodge. Build. Repeat.</p>
+        </div>
       </section>
-      <section aria-labelledby="report-title">
-        <h2 id="report-title">Tell us what happened</h2>
-        <p>Include your iPhone model, iOS version, game version, and the steps that led to the problem. A screenshot can help.</p>
+
+      <section class="release-card" aria-label="Release availability">
+        <div>
+          <p class="eyebrow">Release status</p>
+          <p><strong>Global release 1.0.2 is being prepared.</strong> App Store and Google Play availability will appear here once it is public.</p>
+        </div>
+        <div class="store-row" aria-label="Store availability">
+          <a class="store-button is-disabled" data-store-link="ios" aria-disabled="true" tabindex="-1">
+            <span class="store-mark" aria-hidden="true">●</span><span>App Store<small>Release pending</small></span>
+          </a>
+          <a class="store-button is-disabled" data-store-link="android" aria-disabled="true" tabindex="-1">
+            <span class="store-mark store-mark-android" aria-hidden="true">◆</span><span>Google Play<small>Release pending</small></span>
+          </a>
+        </div>
       </section>
-      <section aria-labelledby="save-title">
-        <h2 id="save-title">Saved progress</h2>
-        <p>Your looks, world unlocks, and personal bests stay on your device. There is no account or cloud save. Deleting the app may remove them.</p>
-        <p>If the game says progress has not saved, keep it open and use Retry save. If progress could not be loaded, use Retry load.</p>
+
+      <section class="daily-section" id="daily" aria-labelledby="daily-title">
+        <div class="daily-copy">
+          <p class="eyebrow"><span></span> Daily Toybox</p>
+          <h2 id="daily-title">One shared three-minute run.</h2>
+          <p>A Daily Toybox link starts the same daily challenge for everyone. XP Magnet is included, so you can focus on your run.</p>
+          <p class="daily-format">Share a calendar day to send friends into the same toybox.</p>
+        </div>
+        <div class="daily-panel" data-daily-card hidden>
+          <p class="daily-panel-kicker">Daily link ready</p>
+          <strong data-daily-date>Wednesday, October 7, 2026</strong>
+          <p>Open this exact day in the installed game, then see how your run feels.</p>
+          <div class="daily-actions">
+            <a class="button button-dark" data-daily-open data-explicit-launch href="toybox-turret://">Open daily in app <span aria-hidden="true">↗</span></a>
+            <button class="copy-button" type="button" data-copy-daily>Copy daily link</button>
+          </div>
+          <p class="daily-status" data-daily-status aria-live="polite"></p>
+        </div>
       </section>
-      <section aria-labelledby="settings-title">
-        <h2 id="settings-title">Sound and motion</h2>
-        <p>Open Settings to change sound effects, music, vibration, or reduced motion. How to play explains the controls and upgrades.</p>
+
+      <section class="how-section" id="how-it-works" aria-labelledby="how-title">
+        <div class="section-heading">
+          <p class="eyebrow">Easy to start, deep enough to keep</p>
+          <h2 id="how-title">Your thumb moves. Your buddy fires.</h2>
+          <p>You can begin without a rulebook. The choices stack up as you learn the worlds.</p>
+        </div>
+        <ol class="steps">
+          <li>
+            <span class="step-icon step-move" aria-hidden="true">↗</span>
+            <div><h3>Move through the mess</h3><p>Drag, brake, and Dash out of the marked danger. Popper fires automatically.</p></div>
+          </li>
+          <li>
+            <span class="step-icon step-stars" aria-hidden="true">✦</span>
+            <div><h3>Pick a boost</h3><p>Collect stars and choose one clear upgrade whenever the action pauses.</p></div>
+          </li>
+          <li>
+            <span class="step-icon step-boss" aria-hidden="true">◎</span>
+            <div><h3>Beat a boss</h3><p>Boss wins add a weapon or improve one. A second weapon is your choice.</p></div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="build-section" aria-labelledby="build-title">
+        <div class="build-art" aria-hidden="true">
+          <div class="build-orbit orbit-one"></div>
+          <div class="build-orbit orbit-two"></div>
+          <span class="build-dot dot-one"></span><span class="build-dot dot-two"></span><span class="build-dot dot-three"></span>
+          <img src="robot-icon.svg" width="154" height="154" alt="">
+        </div>
+        <div>
+          <p class="eyebrow">Make it yours</p>
+          <h2 id="build-title">Ten weapons. Four worlds. Plenty of personality.</h2>
+          <p>Try a direct Bubble Beam, a bouncing Button Boomerang, a Candy Mortar, and more. Build toward five ranks, unlock worlds by beating four bosses, and dress up your buddy with looks earned by playing.</p>
+          <ul class="check-list">
+            <li>Boss moves tell you where danger will land.</li>
+            <li>Each world brings its own toys, terrain, and boss roster.</li>
+            <li>Outfits and keepsakes stay cosmetic—your choices and movement win the run.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="support-panel" id="support" aria-labelledby="support-title">
+        <div>
+          <p class="eyebrow">Need a hand?</p>
+          <h2 id="support-title">Support is one tap away.</h2>
+          <p>Report a problem or ask a question through the public support page. Please share only details you are comfortable making public.</p>
+        </div>
+        <a class="button button-secondary" href="https://github.com/e7mars/toybox-turret-support/issues/new">Open support <span aria-hidden="true">↗</span></a>
       </section>
     </main>
-    <footer><p>Publisher: Oytun Yegin · <a href="privacy.html">Privacy policy</a></p></footer>
+
+    <footer>
+      <p>© Oytun Yegin · <a href="privacy.html">Privacy policy</a> · <a href="#support">Support</a></p>
+    </footer>
   </div>
+  <noscript><p class="noscript-note">The installed-app button still works. Daily links need JavaScript to validate their date code.</p></noscript>
 </body>
 </html>
