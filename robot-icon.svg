@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-label="Toybox Turret friendly robot icon">
+  <!-- A deliberately simple, high-contrast icon: it stays readable after iOS masks it down to a tiny home-screen tile. -->
+  <!-- App stores apply their own masks; keep the source fully opaque. -->
+  <rect width="1024" height="1024" fill="#F8EAD1"/>
+  <circle cx="512" cy="512" r="420" fill="#D7F1E5"/>
+  <circle cx="512" cy="512" r="370" fill="#B2E5D2"/>
+  <circle cx="512" cy="512" r="332" fill="none" stroke="#1D3155" stroke-width="20" stroke-opacity=".13"/>
+  <g fill="#FFD365" opacity=".96">
+    <circle cx="512" cy="139" r="18"/><circle cx="716" cy="199" r="18"/><circle cx="850" cy="372" r="18"/>
+    <circle cx="871" cy="579" r="18"/><circle cx="749" cy="767" r="18"/><circle cx="534" cy="884" r="18"/>
+    <circle cx="310" cy="828" r="18"/><circle cx="170" cy="651" r="18"/><circle cx="151" cy="432" r="18"/><circle cx="291" cy="246" r="18"/>
+  </g>
+  <!-- chunky barrel, tucked behind the character so it reads as a helpful turret rather than a weapon -->
+  <g transform="rotate(-20 610 505)">
+    <rect x="559" y="430" width="247" height="132" rx="62" fill="#1D3155"/>
+    <rect x="585" y="454" width="190" height="84" rx="40" fill="#49BDA5"/>
+    <rect x="730" y="468" width="105" height="56" rx="28" fill="#FFD365"/>
+    <circle cx="835" cy="496" r="42" fill="#1D3155"/>
+    <circle cx="835" cy="496" r="25" fill="#FFF5E2"/>
+  </g>
+  <!-- wind-up key -->
+  <g stroke="#1D3155" stroke-width="29" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M341 653v95"/>
+    <path d="M286 725h110"/>
+    <circle cx="272" cy="725" r="42" fill="#FF7C6B"/>
+    <circle cx="410" cy="725" r="42" fill="#FF7C6B"/>
+  </g>
+  <!-- main friendly robot head -->
+  <rect x="244" y="274" width="512" height="447" rx="150" fill="#1D3155"/>
+  <rect x="277" y="306" width="446" height="368" rx="120" fill="#A7E5D1"/>
+  <!-- antenna -->
+  <path d="M512 287V204" stroke="#1D3155" stroke-width="30" stroke-linecap="round"/>
+  <circle cx="512" cy="174" r="55" fill="#1D3155"/>
+  <circle cx="512" cy="174" r="32" fill="#FF7C6B"/>
+  <circle cx="499" cy="160" r="10" fill="#FFF5E2"/>
+  <!-- screen face -->
+  <rect x="333" y="386" width="334" height="171" rx="60" fill="#1D3155"/>
+  <rect x="358" y="410" width="284" height="122" rx="43" fill="#FFF8E9"/>
+  <circle cx="432" cy="472" r="25" fill="#1D3155"/>
+  <circle cx="564" cy="472" r="25" fill="#1D3155"/>
+  <circle cx="442" cy="461" r="8" fill="#FFFFFF"/>
+  <circle cx="574" cy="461" r="8" fill="#FFFFFF"/>
+  <path d="M459 510c30 22 76 22 106 0" fill="none" stroke="#1D3155" stroke-width="16" stroke-linecap="round"/>
+  <!-- toy chest plate -->
+  <rect x="378" y="588" width="269" height="93" rx="44" fill="#FFD365"/>
+  <circle cx="512" cy="634" r="29" fill="#49BDA5"/>
+  <circle cx="512" cy="634" r="12" fill="#FFF5E2"/>
+  <!-- highlight, so the head is tangible plastic rather than a flat sticker -->
+  <path d="M325 387c32-50 81-75 145-84" fill="none" stroke="#FFFFFF" stroke-width="24" stroke-linecap="round" stroke-opacity=".54"/>
+  <g fill="#B8A5F5">
+    <path d="M200 298l16 42 42 16-42 16-16 42-16-42-42-16 42-16z"/>
+    <path d="M807 690l12 32 32 12-32 12-12 32-12-32-32-12 32-12z"/>
+  </g>
+</svg>
