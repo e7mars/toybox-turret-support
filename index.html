@@ -83,9 +83,9 @@
           <p>A Daily Toybox link starts the same daily challenge for everyone. XP Magnet is included, so you can focus on your run.</p>
           <p class="daily-format">Share a calendar day to send friends into the same toybox.</p>
         </div>
-        <div class="daily-panel" data-daily-card hidden>
+        <div class="daily-panel" data-daily-card hidden tabindex="-1" role="region" aria-labelledby="daily-date">
           <p class="daily-panel-kicker">Daily link ready</p>
-          <strong data-daily-date>Wednesday, October 7, 2026</strong>
+          <strong id="daily-date" data-daily-date>Wednesday, October 7, 2026</strong>
           <p>Open this exact day in the installed game, then see how your run feels.</p>
           <div class="daily-actions">
             <a class="button button-dark" data-daily-open data-explicit-launch href="toybox-turret://">Open daily in app <span aria-hidden="true">↗</span></a>
