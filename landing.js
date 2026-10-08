@@ -62,8 +62,6 @@
   }
 
   function hydrateDailyLink() {
-    const daily = dailyDetailsFromFragment();
-    if (!daily) return;
     const card = document.querySelector("[data-daily-card]");
     const date = document.querySelector("[data-daily-date]");
     const open = document.querySelector("[data-daily-open]");
@@ -71,11 +69,21 @@
     const status = document.querySelector("[data-daily-status]");
     if (!card || !date || !open || !copy || !status) return;
 
+    const daily = dailyDetailsFromFragment();
+    if (!daily) {
+      card.hidden = true;
+      open.href = "toybox-turret://";
+      copy.onclick = null;
+      status.textContent = "";
+      return;
+    }
+
     date.textContent = DAILY_DATE_FORMAT.format(daily.date);
     open.href = `toybox-turret://daily/${daily.id}`;
     card.hidden = false;
+    status.textContent = "";
 
-    copy.addEventListener("click", async () => {
+    copy.onclick = async () => {
       const publicUrl = `${window.location.origin}${window.location.pathname}#daily=${daily.id}`;
       try {
         await navigator.clipboard.writeText(publicUrl);
@@ -83,9 +91,13 @@
       } catch {
         status.textContent = "Copy this page address to share the daily link.";
       }
-    });
+    };
+
+    card.focus({ preventScroll: true });
+    card.scrollIntoView({ block: "start", behavior: "auto" });
   }
 
   applyStorefrontGates();
   hydrateDailyLink();
+  window.addEventListener("hashchange", hydrateDailyLink);
 })();
