@@ -1,65 +1,307 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="theme-color" content="#FAF7F2">
-  <meta name="description" content="Privacy policy for Toybox Turret releases and private TestFlight betas.">
-  <title>Toybox Turret — Privacy</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="page">
-    <header>
-      <span class="brand">Toybox Turret</span>
-      <nav aria-label="Support pages">
-        <a href="index.html">Support</a>
-        <a href="privacy.html" aria-current="page">Privacy</a>
-      </nav>
-    </header>
-    <main>
-      <p class="eyebrow">Your toybox, your device</p>
-      <h1>Privacy policy</h1>
-      <p class="meta">Publisher: Oytun Yegin<br>Effective: <time datetime="2026-10-10">October 10, 2026</time></p>
-      <p>This policy applies to Toybox Turret's private TestFlight test-ad builds: version 1.0.1 (68) and version 1.0.2 (70, 71, 72, 73, and 74). These are single-player builds with no account, purchases, or global leaderboard. None of these builds automatically uploads gameplay progress or publisher diagnostics. Build 67 is ad-free. The private TestFlight test-ad builds include optional Google test rewarded ads; these do not earn advertising revenue for the publisher.</p>
-      <section aria-labelledby="local-title">
-        <h2 id="local-title">Progress on your device</h2>
-        <p>The game saves your buddy name, achievements, outfits, world unlocks, personal scores, lessons, weapon discoveries, and settings. It records interrupted-run progress so it can be counted once after relaunch. There is no cloud save.</p>
-      </section>
-      <section aria-labelledby="diagnostics-title">
-        <h2 id="diagnostics-title">Local game-quality information and optional export in 1.0.2 (70, 71, 72, 73, and 74)</h2>
-        <p>All five private version 1.0.2 builds (70, 71, 72, 73, and 74) keep the same limited game-quality summary on your device: fixed daily count categories for up to 31 UTC days and up to 200 recent event labels. This summary does not include your buddy name, scores, precise location, advertising identifiers, raw exceptions, or stack paths.</p>
-        <p>All five private version 1.0.2 builds (70, 71, 72, 73, and 74) have no configured publisher diagnostics endpoint, do not create a diagnostics upload ID, and do not automatically upload game-quality counts. In any of these builds, you can tap “Share game diagnostics” in About &amp; privacy to send the local summary through your device's share sheet. The export omits the endpoint and installation ID and goes only to a recipient you choose.</p>
-      </section>
-      <section aria-labelledby="ads-title">
-        <h2 id="ads-title">Optional rewarded ads in the TestFlight beta</h2>
-        <p>You can choose to watch a Google test ad to activate XP auto-collect for the current run. Level choices remain manual. Ads are loaded only after you choose to watch; Google consent information may be refreshed separately. The beta requests non-personalized ads and uses Google's official demo advertising identifiers, not a live publisher placement.</p>
-        <p>The native Google Mobile Ads and User Messaging Platform SDKs may process your IP address and approximate location, device or app identifiers, advertising interactions, crash information, and performance diagnostics. Test ads and non-personalized requests do not establish that no data is collected. Google handles this data under its own policies for advertising delivery, reporting, fraud prevention, diagnostics, and analytics.</p>
-        <p>When applicable, Google's consent form controls whether an ad can be requested. Ad privacy choices can be reopened in Settings when Google's SDK requires that option. Declining or skipping an ad does not prevent normal gameplay. The game does not ask for precise location, contacts, microphone access, or cross-app tracking permission.</p>
-        <p>See <a href="https://developers.google.com/admob/ios/privacy/data-disclosure">Google's iOS SDK data disclosure</a> and <a href="https://policies.google.com/privacy">Google's privacy policy</a>. These disclosures cover the native ads-enabled TestFlight builds described above; build 67 does not contain the advertising SDK.</p>
-      </section>
-      <section aria-labelledby="share-title">
-        <h2 id="share-title">Sharing is optional</h2>
-        <p>A share card can include your buddy name, outfit, world, score, boss wins, weapon build, and a game or Daily Toybox link. You choose where it goes in your phone's share sheet. In all five private version 1.0.2 builds (70, 71, 72, 73, and 74), choosing Save Image can cause iOS to ask permission to save the run card to your photo library; generic sharing does not select or read images from your photo library. The game attempts to remove its temporary image afterward; your phone or a recipient may keep a copy.</p>
-      </section>
-      <section aria-labelledby="delete-title">
-        <h2 id="delete-title">Your choices</h2>
-        <p>Change sound, music, vibration, and reduced motion in Settings. Deleting the app may remove local progress. There is no in-app reset or cloud restore. Removing the app does not erase an image you already shared.</p>
-      </section>
-      <section aria-labelledby="website-title">
-        <h2 id="website-title">Website and support</h2>
-        <p>These pages are hosted by GitHub Pages. The page code adds no analytics, tracking pixels, cookies, or contact forms. GitHub logs visitors' IP addresses for security.</p>
-        <p>Support issues are public. Your GitHub profile, message, and attachments are visible to the publisher and other visitors. The publisher uses what you choose to provide to respond and investigate problems.</p>
-        <p>See <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a> for its handling of website, account, and support data.</p>
-      </section>
-      <section class="contact" aria-labelledby="privacy-contact-title">
-        <h2 id="privacy-contact-title">Privacy questions</h2>
-        <p><a class="contact-link" href="https://github.com/e7mars/toybox-turret-support/issues/new">Contact the publisher</a></p>
-        <p>Ask a general privacy question or make a request about a support issue. Include only information you want to share publicly. GitHub handles requests about GitHub account and service data.</p>
-      </section>
-    </main>
-    <footer><p>Publisher: Oytun Yegin · <a href="index.html">Support</a></p></footer>
-  </div>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#FAF7F2" />
+    <meta name="description" content="Privacy policy for Toybox Turret." />
+    <title>Toybox Turret — Privacy</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <span class="brand">Toybox Turret</span>
+        <nav aria-label="Support pages">
+          <a href="index.html">Support</a>
+          <a href="privacy.html" aria-current="page">Privacy</a>
+        </nav>
+      </header>
+      <main>
+        <p class="eyebrow">Your toybox, your choices</p>
+        <h1>Privacy Policy</h1>
+        <p class="meta">
+          Publisher: Oytun Yegin<br />Last updated:
+          <time datetime="2026-11-01">November 1, 2026</time>
+        </p>
+
+        <section aria-labelledby="overview-title">
+          <h2 id="overview-title">Overview</h2>
+          <p>
+            Toybox Turret is a single-player mobile game. This policy explains
+            the information used by the game, its optional public rankings, and
+            its optional rewarded ads. The game does not offer a game account,
+            subscription, paid Star Token pack, checkout, or cloud-save service.
+          </p>
+          <p>
+            This policy describes the current earned-only game and its launch
+            configuration. TestFlight builds can use Google demo ads instead
+            of revenue-earning ads; advertising may also be unavailable while
+            provider verification is pending. Earlier private builds with only
+            local scores are described in the
+            <a href="privacy-legacy-testflight.html">archived beta policy</a>.
+          </p>
+        </section>
+
+        <section aria-labelledby="device-title">
+          <h2 id="device-title">Game data on your device</h2>
+          <p>
+            Your game progress, gear, settings, selected age range, local
+            nickname, and interrupted-run recovery are stored on your device.
+            Deleting the app or clearing its data can remove that local
+            progress. We do not use this local game save as a cloud-save
+            service.
+          </p>
+          <p>
+            At first launch, the game asks for a broad age range: Under 13,
+            13–15, 16–17, or 18 or older. This is a local setting, not identity
+            or age verification. We do not ask for a birthday.
+          </p>
+          <p>
+            The selected range stays on your device. For eligible ad requests,
+            the app sends age-treatment and under-age-of-consent settings to
+            Google rather than a birthday. Public rankings and sharing are
+            available only to profiles set to 16–17 or 18 or older.
+          </p>
+        </section>
+
+        <section aria-labelledby="ranking-title">
+          <h2 id="ranking-title">Optional public rankings</h2>
+          <p>
+            Public rankings are available only to profiles set to 16–17 or 18 or
+            older. To appear on a ranking board, a player first chooses a public
+            nickname. Please do not use a real name, email address, or other
+            private information in that nickname.
+          </p>
+          <p>
+            After a nickname is saved, eligible normal completed runs are
+            automatically queued and sent to the ranking service when the game
+            is open and online. The service receives the public nickname, a
+            random installation identifier, a run identifier, world, score,
+            elapsed time, boss wins, and the relevant monthly period. The
+            nickname, score, elapsed time, boss wins, and rank can be visible to
+            other players. Scores are labelled unverified. XP Magnet runs are
+            not submitted to rankings.
+          </p>
+          <p>
+            The ranking service and its network providers can also process IP
+            address and request metadata to protect the service and apply rate
+            limits. This network information is not shown on the public board.
+          </p>
+          <p>
+            The random identifiers are not displayed on the public board.
+            Submitted ranking records can remain on the board until they are
+            removed or the board is retired. Uninstalling the game does not
+            remove a record that has already been posted. To request help with a
+            public ranking record, use the Support page and provide only the
+            public nickname, world, and score needed to find it.
+          </p>
+        </section>
+
+        <section aria-labelledby="ads-title">
+          <h2 id="ads-title">Optional rewarded ads and privacy choices</h2>
+          <p>
+            Profiles set to Under 13 are not offered Google advertising or
+            public rankings. For profiles set to 13–15, 16–17, or 18 or older, a
+            player may choose to watch an optional Google rewarded ad. No ad is
+            required to play, unlock a world, or finish a run.
+          </p>
+          <p>
+            A rewarded ad can enable XP Magnet for the current run. After the
+            first boss, an available rewarded ad can also grant one Star Token,
+            subject to the game’s daily limit. A failed, unavailable, cancelled,
+            or incomplete ad grants no reward, and the player can always
+            continue without it.
+          </p>
+          <p>
+            The app requests non-personalized ads and applies its
+            age-appropriate ad settings. Before it requests a rewarded ad, it
+            updates consent information, presents any required privacy form, and
+            checks whether ads may be requested. If Google requires a
+            privacy-options entry point, the game shows
+            <strong>Ad privacy choices</strong> in Settings → Game.
+          </p>
+          <p>
+            Non-personalized ads can still involve information processing by
+            Google and its service providers, such as device or advertising
+            identifiers, IP-derived information, ad interactions, diagnostics,
+            and information used for ad delivery, measurement, fraud prevention,
+            and service operation. Google describes its handling in its
+            <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+            its
+            <a
+              href="https://developers.google.com/admob/ios/privacy/data-disclosure"
+              >iOS SDK data disclosure</a
+            >.
+          </p>
+        </section>
+
+        <section aria-labelledby="sharing-title">
+          <h2 id="sharing-title">Sharing</h2>
+          <p>
+            For profiles that can use public features, Share opens the iOS share
+            sheet only after the player taps it. A player chooses the recipient
+            and can cancel. A shared run card may include the buddy name,
+            outfit, world, score, boss wins, and build. The game does not
+            automatically send a share card to the publisher.
+          </p>
+          <p>
+            A card or message may also contain the public game website link.
+            Image sharing uses a temporary image on your device and attempts
+            to remove it after the share sheet closes. If you choose Save
+            Image, iOS may ask for permission to save to Photos. Sharing does
+            not select or read your photo library. A saved image or a copy
+            received by someone else can remain after the game is deleted.
+          </p>
+        </section>
+
+        <section aria-labelledby="diagnostics-title">
+          <h2 id="diagnostics-title">Local support reports</h2>
+          <p>
+            The game keeps limited game-quality counts and event labels on
+            your device, including general error categories. Daily counts and
+            video-reward failure categories are limited to 31 UTC days; recent
+            event labels are limited to 200 entries. Video-reward failures
+            contain a day and a general reason, not the raw Google response,
+            ad-unit identifier, or request identifier.
+          </p>
+          <p>
+            The current game has no publisher diagnostics upload endpoint and
+            does not automatically upload these reports. Eligible profiles
+            can choose Share support report in Settings → Game → About &amp;
+            privacy. The report goes through the system share sheet to a
+            recipient you choose. The export excludes the installation
+            identifier and upload endpoint; it does not contain your buddy
+            name, scores, precise location, advertising identifiers, or raw
+            crash details. Google's separate SDK diagnostics are described
+            in the advertising section above.
+          </p>
+        </section>
+
+        <section aria-labelledby="choices-title">
+          <h2 id="choices-title">Your choices and stored records</h2>
+          <p>
+            You can play without choosing a public nickname, sharing a card,
+            or watching an ad. Where required, use Ad privacy choices in
+            Settings to revisit Google's privacy form. Sound, music, vibration
+            and reduced motion can also be changed in Settings.
+          </p>
+          <p>
+            Deleting the app can remove local progress and settings. It does
+            not remove an already-submitted ranking record, a support request,
+            or a shared image. Ranking records, submission receipts and
+            installation-verification records are retained to operate the
+            boards, prevent duplicate submissions, and deliver earned ranking
+            rewards. There is no automatic deletion when a monthly board
+            closes. Protected backup copies may remain after a live record is
+            removed until those backups are replaced.
+          </p>
+          <p>
+            Depending on where you live, you may have rights to request access,
+            correction or deletion of personal information, object to certain
+            processing, or withdraw consent where processing relies on it.
+            Contact the publisher using the support route below. We may need
+            enough information to locate the record and verify the request;
+            a public nickname alone is not proof of ownership. You may also
+            contact your local privacy regulator.
+          </p>
+        </section>
+
+        <section aria-labelledby="website-title">
+          <h2 id="website-title">Website, support and service providers</h2>
+          <p>
+            The support website is hosted by GitHub Pages. Its page code adds
+            no analytics, tracking pixels, advertising cookies or automatic
+            app launches. GitHub can process visitor IP addresses and request
+            information for security and operation. See
+            <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>.
+          </p>
+          <p>
+            GitHub support issues are public: your GitHub profile, message and
+            attachments can be visible to other people. Use them only for
+            non-sensitive questions and bug reports. The publisher uses what
+            you choose to provide to respond and investigate problems.
+          </p>
+          <p>
+            Public-ranking requests pass through Cloudflare to the publisher's
+            ranking service. Cloudflare, GitHub, Google and their service
+            providers may process information in countries other than yours.
+            Their handling is described in their privacy information,
+            including <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare's privacy policy</a>
+            and the Google and GitHub links above.
+          </p>
+        </section>
+
+        <section aria-labelledby="private-support-title">
+          <h2 id="private-support-title">Private help and privacy messages</h2>
+          <p>
+            You can send a private message through this website's
+            <a href="contact.html">private support form</a>. Updated game
+            builds also offer Help &amp; privacy under Settings → Game →
+            About &amp; privacy → Help. The website and game have separate
+            conversations. No email address or game account is required. If
+            you are under 13, ask a parent or guardian to help contact us.
+          </p>
+          <p>
+            Only the topic and message you write are sent as message content;
+            scores, names, age ranges and local diagnostic reports are not
+            attached automatically. A separate random conversation key
+            authenticates requests, and its hash is stored by the service.
+            The service retains your messages, developer replies, message
+            receipts and timestamps. Network information is processed for
+            delivery and abuse prevention. Messages are private to the
+            conversation and the publisher's support operator, not posted on
+            public boards or GitHub issues.
+          </p>
+          <p>
+            Return to the same in-game screen or browser to check for replies;
+            no email or push notification is sent. The private key and any
+            message awaiting confirmation are saved locally. Deleting the app,
+            clearing browser storage or losing the key can remove access to
+            that conversation. Conversations are automatically removed after
+            90 days without a new message, with cleanup performed periodically.
+            Protected backups can remain until they rotate. You can request
+            earlier removal through the private conversation.
+          </p>
+          <p>
+            We use these records to respond to your request and protect the
+            service. Do not send passwords, payment details, a child's real
+            name, birthdays, or private device/conversation keys. For a ranking
+            request, start with the public nickname and world. We may ask for
+            proportionate information to verify ownership before changing
+            another record.
+          </p>
+        </section>
+
+        <section id="requests" aria-labelledby="requests-title">
+          <h2 id="requests-title">Questions and requests</h2>
+          <p>
+            Use private support for privacy questions or help locating a public
+            ranking record. Please do not include passwords, full device
+            identifiers, a child’s real name, birthday, or other sensitive
+            information in a support request.
+          </p>
+          <p>
+            <a
+              class="contact-link"
+              href="contact.html"
+              >Contact Toybox Turret privately</a
+            >
+          </p>
+        </section>
+
+        <section aria-labelledby="changes-title">
+          <h2 id="changes-title">Changes to this policy</h2>
+          <p>
+            We may update this policy when the game’s data practices change. The
+            current policy will be posted at this page with a revised date
+            before the updated practice takes effect.
+          </p>
+        </section>
+      </main>
+      <footer>
+        <p>Publisher: Oytun Yegin · <a href="index.html">Support</a></p>
+      </footer>
+    </div>
+  </body>
 </html>

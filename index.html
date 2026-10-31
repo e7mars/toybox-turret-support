@@ -25,7 +25,7 @@
       </a>
       <nav aria-label="Page navigation">
         <a href="#play">Play</a>
-        <a href="#daily">Daily</a>
+        <a href="#worlds">Worlds</a>
         <a href="#support">Support</a>
         <a href="privacy.html">Privacy</a>
       </nav>
@@ -64,35 +64,33 @@
       <section class="release-card" aria-label="Release availability">
         <div>
           <p class="eyebrow">Release status</p>
-          <p><strong>Global release 1.0.2 is being prepared.</strong> App Store and Google Play availability will appear here once it is public.</p>
+          <p><strong>The iPhone release is being prepared.</strong> The App Store link will appear here when the game is public. Android is planned for later.</p>
         </div>
         <div class="store-row" aria-label="Store availability">
           <a class="store-button is-disabled" data-store-link="ios" aria-disabled="true" tabindex="-1">
             <span class="store-mark" aria-hidden="true">●</span><span>App Store<small>Release pending</small></span>
           </a>
           <a class="store-button is-disabled" data-store-link="android" aria-disabled="true" tabindex="-1">
-            <span class="store-mark store-mark-android" aria-hidden="true">◆</span><span>Google Play<small>Release pending</small></span>
+            <span class="store-mark store-mark-android" aria-hidden="true">◆</span><span>Google Play<small>Planned for later</small></span>
           </a>
         </div>
       </section>
 
-      <section class="daily-section" id="daily" aria-labelledby="daily-title">
-        <div class="daily-copy">
-          <p class="eyebrow"><span></span> Daily Toybox</p>
-          <h2 id="daily-title">One shared three-minute run.</h2>
-          <p>A Daily Toybox link starts the same daily challenge for everyone. XP Magnet is included, so you can focus on your run.</p>
-          <p class="daily-format">Share a calendar day to send friends into the same toybox.</p>
+      <section class="campaign-section" id="worlds" aria-labelledby="worlds-title">
+        <div class="campaign-copy">
+          <p class="eyebrow"><span></span> Four colorful worlds</p>
+          <h2 id="worlds-title">Four bosses each. Infinite when you want more.</h2>
+          <p>Clear four bosses to unlock the next world. Each one brings a new toy crowd, terrain twist, and boss roster to learn before you take your build further.</p>
+          <p class="campaign-format">Finished run cards share a neutral game link. Older Daily links now open this page only—they do not choose a mode or start a run.</p>
         </div>
-        <div class="daily-panel" data-daily-card hidden tabindex="-1" role="region" aria-labelledby="daily-date">
-          <p class="daily-panel-kicker">Daily link ready</p>
-          <strong id="daily-date" data-daily-date>Wednesday, October 7, 2026</strong>
-          <p>Open this exact day in the installed game, then see how your run feels.</p>
-          <div class="daily-actions">
-            <a class="button button-dark" data-daily-open data-explicit-launch href="toybox-turret://">Open daily in app <span aria-hidden="true">↗</span></a>
-            <button class="copy-button" type="button" data-copy-daily>Copy daily link</button>
+        <aside class="campaign-panel" aria-label="Choose a run in the installed game">
+          <p class="campaign-panel-kicker">Choose your next run</p>
+          <strong>Start a world. Then keep going in Infinite.</strong>
+          <p>Open the installed game, pick from the world carousel, or choose Infinite when you want the toybox to keep coming.</p>
+          <div class="campaign-actions">
+            <a class="button button-dark" data-explicit-launch href="toybox-turret://">Open Toybox Turret <span aria-hidden="true">↗</span></a>
           </div>
-          <p class="daily-status" data-daily-status aria-live="polite"></p>
-        </div>
+        </aside>
       </section>
 
       <section class="how-section" id="how-it-works" aria-labelledby="how-title">
@@ -126,7 +124,7 @@
         </div>
         <div>
           <p class="eyebrow">Make it yours</p>
-          <h2 id="build-title">Ten weapons. Four worlds. Plenty of personality.</h2>
+          <h2 id="build-title">Eleven weapons. Four worlds. Plenty of personality.</h2>
           <p>Try a direct Bubble Beam, a bouncing Button Boomerang, a Candy Mortar, and more. Build toward five ranks, unlock worlds by beating four bosses, and dress up your buddy with looks earned by playing.</p>
           <ul class="check-list">
             <li>Boss moves tell you where danger will land.</li>
@@ -140,9 +138,9 @@
         <div>
           <p class="eyebrow">Need a hand?</p>
           <h2 id="support-title">Support is one tap away.</h2>
-          <p>Report a problem or ask a question through the public support page. Please share only details you are comfortable making public.</p>
+          <p>Send a private message and check replies here or in the updated game. No email address or game account needed. If you're under 13, ask a parent to help.</p>
         </div>
-        <a class="button button-secondary" href="https://github.com/e7mars/toybox-turret-support/issues/new">Open support <span aria-hidden="true">↗</span></a>
+        <a class="button button-secondary" href="contact.html">Private support <span aria-hidden="true">↗</span></a>
       </section>
     </main>
 
@@ -150,6 +148,6 @@
       <p>© Oytun Yegin · <a href="privacy.html">Privacy policy</a> · <a href="#support">Support</a></p>
     </footer>
   </div>
-  <noscript><p class="noscript-note">The installed-app button still works. Daily links need JavaScript to validate their date code.</p></noscript>
+  <noscript><p class="noscript-note">The installed-app button still works without JavaScript.</p></noscript>
 </body>
 </html>
