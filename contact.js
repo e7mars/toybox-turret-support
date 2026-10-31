@@ -43,7 +43,7 @@
   try { restore(load()); } catch (error) { status.textContent = error.message; }
   form.addEventListener('submit', event => { event.preventDefault(); void run(async () => {
     const message = field.value.trim();
-    if (!message || Array.from(message).length > 400) throw Error('Write 1–400 characters.');
+    if (!message || Array.from(message).length > 400 || /[\u0000-\u0008\u000b\u000c\u000e-\u001f\u007f]/u.test(message)) throw Error('Write 1–400 characters without control characters.');
     const value = load() || { secret: random(), endpoint };
     if (value.pending && (value.pending.message !== message || value.pending.topic !== topic.value)) throw Error('Retry the original message first.');
     value.pending ||= { id: crypto.randomUUID(), topic: topic.value, message };
