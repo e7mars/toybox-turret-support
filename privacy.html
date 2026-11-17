@@ -4,14 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#FAF7F2" />
-    <meta name="description" content="Privacy policy for Toybox Turret." />
-    <title>Toybox Turret — Privacy</title>
+    <meta name="description" content="Privacy policy for Toybox Survival." />
+    <title>Toybox Survival — Privacy</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="page">
       <header>
-        <span class="brand">Toybox Turret</span>
+        <span class="brand">Toybox Survival</span>
         <nav aria-label="Support pages">
           <a href="index.html">Support</a>
           <a href="privacy.html" aria-current="page">Privacy</a>
@@ -22,13 +22,13 @@
         <h1>Privacy Policy</h1>
         <p class="meta">
           Publisher: Oytun Yegin<br />Last updated:
-          <time datetime="2026-11-01">November 1, 2026</time>
+          <time datetime="2026-11-17">November 17, 2026</time>
         </p>
 
         <section aria-labelledby="overview-title">
           <h2 id="overview-title">Overview</h2>
           <p>
-            Toybox Turret is a single-player mobile game. This policy explains
+            Toybox Survival is a single-player mobile game. This policy explains
             the information used by the game, its optional public rankings, and
             its optional rewarded ads. The game does not offer a game account,
             subscription, paid Star Token pack, checkout, or cloud-save service.
@@ -40,6 +40,12 @@
             provider verification is pending. Earlier private builds with only
             local scores are described in the
             <a href="privacy-legacy-testflight.html">archived beta policy</a>.
+          </p>
+          <p>
+            A later analytics-enabled build may offer eligible players a
+            separate, optional gameplay-analysis setting. That feature is
+            described below. It is not enabled by local support reports,
+            public rankings, advertising consent, or a previous build.
           </p>
         </section>
 
@@ -74,14 +80,26 @@
             private information in that nickname.
           </p>
           <p>
-            After a nickname is saved, eligible normal completed runs are
-            automatically queued and sent to the ranking service when the game
-            is open and online. The service receives the public nickname, a
-            random installation identifier, a run identifier, world, score,
+            After a nickname is saved, eligible world runs are automatically queued
+            and sent to the ranking service when the game is open and online,
+            including otherwise eligible XP Magnet runs. Endless locks its ranked
+            result at the fourth boss or submits the score when the run ends earlier.
+            Later laps and Daily scores count toward personal records. A monthly-prize
+            candidate needs at least one boss win or at least 30 seconds and 100
+            Combat score. The service receives the public nickname, a random
+            installation identifier, a run identifier, world, Combat score,
             elapsed time, boss wins, and the relevant monthly period. The
-            nickname, score, elapsed time, boss wins, and rank can be visible to
-            other players. Scores are labelled unverified. XP Magnet runs are
-            not submitted to rankings.
+            nickname, Combat score, elapsed time, boss wins, and rank can be
+            visible to other players. Combat scores are labelled unverified.
+          </p>
+          <p>
+            All-star placement compares base Combat score before the 1×/2×/3×
+            challenge multiplier, while each star tab shows that tier’s raw
+            Combat scores. A completed run that crosses a UTC-month boundary can
+            receive up to six hours of submission grace. This does not guarantee
+            delivery while the device is offline. After the grace expires, the
+            saved result remains on the device but cannot enter global placement
+            for that month.
           </p>
           <p>
             The ranking service and its network providers can also process IP
@@ -178,23 +196,96 @@
           </p>
         </section>
 
+        <section aria-labelledby="analytics-title">
+          <h2 id="analytics-title">Optional gameplay analysis</h2>
+          <p>
+            In an analytics-enabled build, profiles set to 16–17 or 18 or
+            older can choose <strong>Share run analytics</strong> in
+            Settings → Run analytics. The setting is off until the player turns it on. It is a
+            separate choice from public rankings, support reports, Google ad
+            privacy choices, and sharing a run card. An older local diagnostics
+            choice is not carried into this setting. Profiles set to Under 13
+            or 13–15 are not offered this setting.
+          </p>
+          <p>
+            With that choice on, the game creates a random analytics identifier
+            and a separate device-held secret for this service. They are not a
+            public nickname and are not the ranking identifier or the private
+            support key. The service stores a hash of the secret rather than
+            the secret itself to accept later requests. It does not provide a
+            public player profile,
+            history, leaderboard, or search route.
+          </p>
+          <p>
+            The publisher can review this pseudonymous history in private
+            reports to assess game balance and feature use. It is not public
+            and is not joined to your ranking, support, or advertising
+            identifiers.
+          </p>
+          <p>
+            The game sends a bounded run history: app and balance versions;
+            broad platform and release channel; world, difficulty and challenge
+            context; the starting item loadout, item stat lines and grades,
+            calculated modifiers, and progression summary; periodic run state
+            snapshots; final weapons, ranks, augments, combo routes and combat
+            counters; and whether run assistance was used. It also records the
+            draft choices offered, selected or rerolled, and discrete replay,
+            share-sheet and rewarded-ad actions. A player may optionally rate a
+            finished run as Rough, Okay or Fun. This is fixed-choice feedback,
+            not a free-text survey.
+          </p>
+          <p>
+            A stat-bearing equipped combat item can use an item identifier that
+            begins with <code>look:</code>; its identity and stat lines are
+            included because they affect the run. The history does not include a
+            purely cosmetic outfit or wardrobe snapshot.
+          </p>
+          <p>
+            The history does not include a nickname, buddy name, age range,
+            email, contacts, precise location, advertising identifier, ad-unit
+            or request identifier, device model, IP address in the stored run
+            record, raw crash data, message content, recipient, share-card
+            image, or a record of whether a share was completed. Network
+            providers can process request and IP information to route and
+            protect the service, as described below.
+          </p>
+          <p>
+            The service automatically removes analytics records 90 days after
+            it receives them.
+            The on-device queue is limited to 31 days, 300 events and 2 MiB,
+            and is kept only to retry an opted-in upload. Turning the setting
+            off stops new collection. The player
+            can also choose <strong>Delete shared run records</strong> in
+            Settings → Run analytics: that disables the setting and asks the service to remove the live analytics
+            records. If the device is offline, the deletion request stays on the
+            device until it can be delivered. The service retains the random
+            analytics identifier, a one-way credential hash and deletion timing
+            for 90 days only to reject delayed queued uploads; this marker has
+            no run history. Existing protected backup storage keeps up to seven
+            daily SQLite snapshots, so a removed record can remain until its
+            normal rotation.
+          </p>
+        </section>
+
         <section aria-labelledby="choices-title">
           <h2 id="choices-title">Your choices and stored records</h2>
           <p>
             You can play without choosing a public nickname, sharing a card,
-            or watching an ad. Where required, use Ad privacy choices in
-            Settings to revisit Google's privacy form. Sound, music, vibration
-            and reduced motion can also be changed in Settings.
+            watching an ad, or turning on gameplay analytics. Where required,
+            use Ad privacy choices in Settings to revisit Google's privacy
+            form. Sound, music, vibration and reduced motion can also be
+            changed in Settings.
           </p>
           <p>
             Deleting the app can remove local progress and settings. It does
             not remove an already-submitted ranking record, a support request,
-            or a shared image. Ranking records, submission receipts and
-            installation-verification records are retained to operate the
-            boards, prevent duplicate submissions, and deliver earned ranking
-            rewards. There is no automatic deletion when a monthly board
-            closes. Protected backup copies may remain after a live record is
-            removed until those backups are replaced.
+            or a shared image. It can also prevent delivery of an analytics
+            deletion request that has not yet reached the service. Ranking
+            records, submission receipts and installation-verification records
+            are retained to operate the boards, prevent duplicate submissions,
+            and deliver earned ranking rewards. There is no automatic deletion
+            when a monthly board closes. Protected backup copies may remain
+            after a live record is removed until those backups are replaced.
           </p>
           <p>
             Depending on where you live, you may have rights to request access,
@@ -223,10 +314,10 @@
             you choose to provide to respond and investigate problems.
           </p>
           <p>
-            Public-ranking requests pass through Cloudflare to the publisher's
-            ranking service. Cloudflare, GitHub, Google and their service
-            providers may process information in countries other than yours.
-            Their handling is described in their privacy information,
+            Public-ranking and opted-in analytics requests pass through
+            Cloudflare to the publisher's service. Cloudflare, GitHub, Google
+            and their service providers may process information in countries
+            other than yours. Their handling is described in their privacy information,
             including <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare's privacy policy</a>
             and the Google and GitHub links above.
           </p>
@@ -285,7 +376,7 @@
             <a
               class="contact-link"
               href="contact.html"
-              >Contact Toybox Turret privately</a
+              >Contact Toybox Survival privately</a
             >
           </p>
         </section>

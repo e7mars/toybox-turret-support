@@ -21,7 +21,7 @@
   }
   function render(messages) {
     if (!Array.isArray(messages) || messages.length > 40 || messages.some(m => !m || !['player','support'].includes(m.sender) || typeof m.message !== 'string' || Array.from(m.message).length > 400)) throw Error('The conversation could not be opened.');
-    conversation.textContent = messages.map(m => `${m.sender === 'support' ? 'Toybox Turret support' : 'You'}\n${m.message}`).join('\n\n') || 'No messages yet.';
+    conversation.textContent = messages.map(m => `${m.sender === 'support' ? 'Toybox Survival support' : 'You'}\n${m.message}`).join('\n\n') || 'No messages yet.';
   }
   async function call(value, payload) {
     const controller = new AbortController(), timer = setTimeout(() => controller.abort(), 10000);
